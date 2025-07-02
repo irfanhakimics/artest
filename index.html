@@ -1,6 +1,16 @@
-<a-scene embedded arjs>
-  <a-marker type="pattern" url="didi.patt">
-    <a-sphere color="blue" position="0 0.5 0" radius="0.3"></a-sphere>
-  </a-marker>
-  <a-entity camera></a-entity>
-</a-scene>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js Basic Example</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+<a-marker type="pattern" url="my-marker.patt">
+  <a-sphere position="0 0.5 0" radius="0.5" color="blue"></a-sphere>
+</a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
